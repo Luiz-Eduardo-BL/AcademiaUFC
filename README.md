@@ -35,11 +35,11 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 
    ![Tela de Cadastro](prototipo/02.png)
 
-3. Tela de Disciplinas
+3. Tela de Progresso
 
    ![Tela de Progresso](prototipo/03.png)
 
-4. Tela de Progresso
+4. Tela de Adiç
 
    ![Tela de Disciplinas](prototipo/04.png)
 
