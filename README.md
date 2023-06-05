@@ -39,7 +39,7 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 
    ![Tela de Progresso](prototipo/03.png)
 
-4. Tela de Adiç
+4. Tela de Adição de Disciplinas
 
    ![Tela de Disciplinas](prototipo/04.png)
 
