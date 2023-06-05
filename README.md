@@ -28,15 +28,19 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 ## Telas de Protótipo
 
 1. Tela de Login
+
    ![Tela de Login](prototipo/01.png)
 
 2. Tela de Seleção do Curso
+
    ![Tela de Cadastro](prototipo/02.png)
 
 3. Tela de Disciplinas
+
    ![Tela de Progresso](prototipo/03.png)
 
 4. Tela de Progresso
+
    ![Tela de Disciplinas](prototipo/04.png)
 
 
