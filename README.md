@@ -31,7 +31,7 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 
    ![Tela de Login](prototipo/01.png)
 
-2. Tela de Seleção do Curso
+2. Tela de Cadastro
 
    ![Tela de Cadastro](prototipo/02.png)
 
