@@ -27,22 +27,107 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 
 ## Telas de Protótipo
 
-1. Tela de Login
+## Telas de Protótipo
 
-   ![Tela de Login](prototipo/01.png)
+| Tela de Login                            | Tela de Cadastro                         |
+| :--------------------------------------: | :--------------------------------------: |
+| ![Tela de Login](prototipo/01.png)       | ![Tela de Cadastro](prototipo/02.png)    |
 
-2. Tela de Cadastro
+| Tela de Progresso                        | Tela de Adição de Disciplinas             |
+| :--------------------------------------: | :--------------------------------------: |
+| ![Tela de Progresso](prototipo/03.png)    | ![Tela de Disciplinas](prototipo/04.png) |
 
-   ![Tela de Cadastro](prototipo/02.png)
 
-3. Tela de Progresso
+## Estrutura do Projeto
 
-   ![Tela de Progresso](prototipo/03.png)
+Para deixar o projeto mais organizado, reestruturei as pastas da seguinte maneira:
+```
+academia_ufc/
+  |- assets/
+     |- images/
+         |- background.jpg
+         |- facebook_logo.png
+         |- google_logo.png
+         |- logo_image.png
+  |- lib/
+     |- database/
+         |- database_helper.dart
+     |- screens/
+         |- auth/
+            |- login_screen.dart
+            |- register_screen.dart
+         |- home/
+            |- home_screen.dart
+         |- materials/
+            |- add_materials.dart
+     |- utils/
+         |- validator.dart
+     |- main.dart
+  |- assets/
+     |- images/
+         |- logo.png
+  |- README.md
+```
 
-4. Tela de Adição de Disciplinas
 
-   ![Tela de Disciplinas](prototipo/04.png)
+A estrutura do projeto segue a seguinte organização:
 
+- `assets/`: Contém os recursos estáticos do aplicativo.
+   - `images/`: Contém as imagens utilizadas no projeto.
+      - `background.jpg`: Imagem de fundo do aplicativo.
+      - `facebook_logo.png`: Logo do Facebook.
+      - `google_logo.png`: Logo do Google.
+      - `logo_image.png`: Imagem do logo do aplicativo.
+- `lib/`: Contém o código-fonte do aplicativo.
+   - `database/`: Contém o arquivo `database_helper.dart` para lidar com o banco de dados.
+   - `screens/`: Contém as telas do aplicativo.
+      - `auth/`: 
+         - `login_screen.dart`: Tela de login.
+         - `register_screen.dart`: Tela de registro.
+      - `home/`: 
+         - `home_screen.dart`: Tela inicial do aplicativo.
+      - `materials/`: 
+         - `add_materials.dart`: Tela de adição de materiais.
+   - `utils/`: Contém utilitários e helpers.
+      - `validator.dart`: Arquivo contendo funções de validação.
+   - `main.dart`: Arquivo principal do aplicativo.
+
+Para utilizar essa estrutura, você pode criar as pastas e arquivos correspondentes dentro do seu projeto. Certifique-se de colocar os recursos estáticos (imagens) na pasta correta (`assets/images/`).
+
+
+## Modelagem do Banco de Dados (SQLite)
+
+O aplicativo utiliza o banco de dados SQLite para armazenar as informações das disciplinas e o progresso do aluno. A modelagem do banco de dados é composta por quatro tabelas:
+
+### Tabelas
+
+1. Curso
+
+   - `id` INTEGER (Primary Key, Auto Increment)
+   - `nome` TEXT
+
+2. Materias
+
+   - `IdMaterias` INTEGER (Primary Key, Auto Increment)
+   - `Nome` TEXT
+   - `Tipo` TEXT
+
+3. CursoMaterias
+
+   - `IdCursoMateria` INTEGER (Primary Key, Auto Increment)
+   - `CursoID` INTEGER (Foreign Key referenciando Curso.id)
+   - `MateriaID` INTEGER (Foreign Key referenciando Materias.IdMaterias)
+   - `Concluidas` INTEGER
+
+4. Usuarios
+
+   - `IdUsuarios` INTEGER (Primary Key, Auto Increment)
+   - `UserName` TEXT
+   - `Email` TEXT
+   - `Senha` TEXT
+   - `CursoID` INTEGER (Foreign Key referenciando Curso.id)
+
+![Modelagem do Banco de Dados](prototipo/modelagem_banco_dados.png)
 
 ## Tecnologias Utilizadas
 
