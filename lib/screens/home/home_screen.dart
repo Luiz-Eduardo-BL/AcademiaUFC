@@ -36,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(20 * fem),
                       ),
                     ),
-                    //Texto (Completou outra materia?) e botao Adicionar materia em baixo
                   ),
                 ),
               ),
