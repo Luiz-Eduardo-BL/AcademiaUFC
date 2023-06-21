@@ -11,6 +11,7 @@ O aplicativo contemplará os seguintes cursos:
 - Ciência da Computação (CC)
 - Design Digital (DD)
 - Redes de Computadores (Redes)
+- Sistema da Informação (SI)
 
 Cada curso possui sua própria grade curricular, com as disciplinas obrigatórias e optativas correspondentes. O aplicativo fornecerá uma interface intuitiva para o usuário selecionar seu curso e visualizar as disciplinas relacionadas.
 
