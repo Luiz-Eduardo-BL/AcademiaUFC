@@ -28,8 +28,6 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 
 ## Telas de Protótipo
 
-## Telas de Protótipo
-
 | Tela de Login                            | Tela de Cadastro                         |
 | :--------------------------------------: | :--------------------------------------: |
 | ![Tela de Login](prototipo/01.png)       | ![Tela de Cadastro](prototipo/02.png)    |
