@@ -16,6 +16,7 @@ class _AddMaterialsState extends State<AddMaterials> {
 
     return Scaffold(
       body: Stack(
+        fit: StackFit.expand,
         children: [
           Container(
             constraints: const BoxConstraints.expand(),
@@ -38,7 +39,6 @@ class _AddMaterialsState extends State<AddMaterials> {
                         borderRadius: BorderRadius.circular(20 * fem),
                       ),
                     ),
-                    //Texto (Completou outra materia?) e botao Adicionar materia em baixo
                   ),
                 ),
               ),
@@ -55,7 +55,85 @@ class _AddMaterialsState extends State<AddMaterials> {
                   ),
                 ),
               ),
-              // opcoes de materia obrigatoria ou optativa se for obrigatoria mostra as que existem no banco de dados e se for optativa aparece o campo de escrever o nome da materia
+              Positioned(
+                child: Align(
+                  alignment: Alignment.center,
+                  child: SizedBox(
+                    width: 350 * fem,
+                    height: 450 * fem,
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          20 * fem, 20 * fem, 20 * fem, 5 * fem),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Adicione as Materias que Completou!',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: 'Roboto',
+                              fontSize: 30 * fem,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 50 * fem),
+                          TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20 * fem),
+                              ),
+                              filled: true,
+                              fillColor:
+                                  const Color.fromARGB(181, 255, 255, 255),
+                              labelText: 'Nome da Matéria',
+                            ),
+                          ),
+                          SizedBox(height: 10 * fem),
+                          TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20 * fem),
+                              ),
+                              filled: true,
+                              fillColor:
+                                  const Color.fromARGB(181, 255, 255, 255),
+                              labelText: 'Nome da Matéria',
+                            ),
+                          ),
+                          SizedBox(height: 10 * fem),
+                          TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20 * fem),
+                              ),
+                              filled: true,
+                              fillColor:
+                                  const Color.fromARGB(181, 255, 255, 255),
+                              labelText: 'Nome da Matéria',
+                            ),
+                          ),
+                          SizedBox(height: 50 * fem),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  const Color.fromARGB(255, 5, 21, 163),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20 * fem),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 40 * fem,
+                                vertical: 15 * fem,
+                              ),
+                            ),
+                            child: Text("Cadastrar"),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ]),
           ),
         ],
