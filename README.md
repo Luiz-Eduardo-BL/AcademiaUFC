@@ -32,9 +32,9 @@ Mais funcionalidades poderão/serão adicionadas com decorrer do tempo.
 | :--------------------------------------: | :--------------------------------------: |
 | ![Tela de Login](prototipo/01.png)       | ![Tela de Cadastro](prototipo/02.png)    |
 
-| Tela de Progresso                        | Tela de Adição de Disciplinas             |
+| Tela de Progresso                        | Tela de Adição de Disciplinas            |
 | :--------------------------------------: | :--------------------------------------: |
-| ![Tela de Progresso](prototipo/03.png)    | ![Tela de Disciplinas](prototipo/04.png) |
+| ![Tela de Progresso](prototipo/03.png)   | ![Tela de Disciplinas](prototipo/04.png) |
 
 
 ## Estrutura do Projeto
